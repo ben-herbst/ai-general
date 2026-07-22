@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 1662a7be-ab1c-41f0-9259-28868a5aba6f
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/ben-herbst/ai-general
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
