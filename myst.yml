@@ -9,21 +9,21 @@ project:
   github: https://github.com/ben-herbst/ai-general
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
-  # Pinned to book-theme v1.4.1 rather than the bare name `book-theme`.
+  # Pinned to book-theme v2.0.0 (39551f85, 2026-11-12) rather than the bare
+  # name `book-theme`.
   #
   # The bare name resolves through api.mystmd.org to that repository's `main`
   # branch, so every build silently picks up whatever has been pushed there.
   # That is how consciousness broke on 2026-11-11: article-theme published
-  # v2.0.0 on 2026-11-10 and mystmd 1.12.0 cannot prerender it.
+  # v2.0.0 on 2026-11-10 and mystmd 1.12.0 cannot prerender it. book-theme
+  # main has itself moved twice since -- 08951401 on 11-10 and 39551f85 on
+  # 11-12, both tagged v2.0.0 from different source commits.
   #
-  # book-theme published v2.0.0 the same day from the same source commit, but
-  # it was checked on 2026-11-12 and builds cleanly, so this project was never
-  # broken. The pin is for reproducibility, not a repair: v1.4.1 is what the
-  # last published build (2026-10-28) used, so pinning changes nothing visible
-  # while removing the chance of an unannounced theme release breaking it.
-  #
-  # Switching to v2.0.0 (08951401) is a safe deliberate upgrade when wanted.
-  template: https://github.com/myst-templates/book-theme/archive/23f2df5493e23dfb1d9433c8aa64c87beb4232a3.zip
+  # This was pinned to v1.4.1 first, for consistency with the article-theme
+  # projects. book-theme v2.0.0 is not broken, though, and v1.4.1 renders less
+  # of the content, so the pin is moved up deliberately rather than held back.
+  # pano-docs is on this same commit.
+  template: https://github.com/myst-templates/book-theme/archive/39551f85e7540f44b3b7e1341b4fd4ca236621dc.zip
   # options:
   #   favicon: favicon.ico
   #   logo: site_logo.png
